@@ -1,0 +1,23 @@
+{
+  "name": "vdom",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "build": "esbuild src/index.js --bundle --outfile=www/dist/out.js",
+    "watch": "yarn build --watch",
+    "start": "esbuild --servedir=www",
+    "dev": "node esbuild.config.js -w"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "snabbdom": "^3.1.0"
+  },
+  "devDependencies": {
+    "esbuild": "^0.13.15",
+    "esbuild-serve": "^1.0.1"
+  }
+}
